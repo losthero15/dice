@@ -6,6 +6,8 @@ document.querySelector(".img2").setAttribute("src", "images/dice" + randomNumber
 
 if (randomNumber1 > randomNumber2) {
   document.querySelector("h1").innerHTML = "<i class='fas fa-flag'></i> Player 1 Wins!";
-} else {
+} else if (randomNumber1 < randomNumber2) {
   document.querySelector("h1").innerHTML = "Player 2 Wins! <i class='fas fa-flag'></i>";
+} else {
+  document.querySelector("h1").innerHTML = "Draw !";
 }
